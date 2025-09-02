@@ -1,0 +1,2 @@
+# estruturaDecisao
+Ativadades da lista
