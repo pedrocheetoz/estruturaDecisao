@@ -1,0 +1,54 @@
+<script>
+    /*
+    PROBLEMA: DESCONTO COMBUSTÍVEL
+    Um posto está vendendo combustíveis com a seguinte tabela de descontos:
+    Álcool:
+    - até 20 litros, desconto de 3% por litro
+    - acima de 20 litros, desconto de 5% por litro
+
+    Gasolina:
+    - até 20 litros, desconto de 4% por litro
+    - acima de 20 litros, desconto de 6% por litro
+    
+    Escreva um algoritmo que leia o número de litros vendidos, o tipo de combustível (codificado da seguinte forma: A-álcool, G-gasolina), calcule e imprima o valor a ser pago pelo cliente sabendo-se que o preço do litro da gasolina é R$ 6,50 o preço do litro do álcool é R$ 6,10.
+    */
+
+    //ENTRADA
+
+    const tipo = prompt(`Qual o tipo do combustível?(A-álcool ou G-gasolina)`)
+    const litro = Number(prompt(`Quantos litros foram abatecidos?`))
+    const preçoG = Number(6.50)
+    const preçoA = Number(6.10)
+    const valorBrutoG = litro * 6.50
+    const valorBrutoA = litro * 6.10
+    const desconto1 = valorBrutoG - (valorBrutoG * 0.03)
+    const desconto2 = valorBrutoG - (valorBrutoG * 0.05)
+    const desconto3 = valorBrutoA - (valorBrutoA * 0.04)
+    const desconto4 = valorBrutoA - (valorBrutoA * 0.06)
+
+    //PROCESSAMENTO
+
+    if (tipo == "G" &&  litro <= 20) {
+        alert(`O valor a ser pago é R$${desconto1}`)
+    }
+    else if (tipo == "G" && litro > 20) {
+        alert(`O valor a ser pago é R$${desconto2}`)
+    }
+    else if (tipo == "A" && litro <= 20) {
+
+        alert(`O valor a ser pago é R$${desconto3}`)
+    }
+    else if (tipo == "A" && litro > 20) {
+        alert(`O valor a ser pago é R$${desconto4}`)
+    }
+    else {
+        alert(`Informe o que é pedido`)
+    }
+
+
+
+
+
+    
+
+</script>

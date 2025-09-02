@@ -1,0 +1,20 @@
+<meta charset="UTF-8">
+<script>
+    /*
+    //PROBLEMA: TROCAR VARIÁVEIS
+    Faça um script que pede dois inteiros e armazene eles em duas variáveis.
+    Em seguida, troque o valor das variáveis, invertendo e exibindo o antes e o depois em uma janela de alert.
+    */
+let valor1 = Number(prompt(`informe um valor`))
+let valor2 = Number(prompt(`Informe outro Valor`))
+
+const valorRef = valor1
+
+valor1 = valor2
+
+valor2 = valorRef
+
+document.write(`Os valores são ${valor1} e ${valorRef}`)
+
+
+</script>
